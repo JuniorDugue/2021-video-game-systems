@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -9,7 +10,12 @@ export default function Home() {
         {["ps5", "xboxs", "switch", "pc"].map((gamesystems) => (
           <Link href={gamesystems}>
             <a>
-              <img className={styles.image} src={gamesystems + ".jpg"} />
+              <motion.img 
+              className={styles.image} 
+              src={gamesystems + ".jpg"}
+              animate={{scale: 1}}
+              whileHover={{scale: 1.1}}
+               />
             </a>
           </Link>
         ))}

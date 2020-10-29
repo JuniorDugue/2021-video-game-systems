@@ -8,7 +8,7 @@ export default function GameSystem() {
   return (
     <div className={styles.container}>
       <h1>{gamesystems}</h1>
-      <img className={styles.image} src={gamesystems + ".jpg"} />
+      <img className={styles.['big-image']} src={gamesystems + ".jpg"} />
     </div>
   );
 }

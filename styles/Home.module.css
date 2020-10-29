@@ -17,3 +17,9 @@
   height: 300px;
   object-fit: contain;
 }
+
+.big-image {
+  width: 900px;
+  height: 900px;
+  object-fit: contain;
+}
